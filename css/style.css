@@ -1,0 +1,1135 @@
+*{box-sizing: border-box; image-rendering: optimizeQuality; margin: 0px; position: 0px;font-family: 'Roboto', sans-serif; -webkit-font-smoothing: antialiased !important;}
+
+
+
+.flex-destaque{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.card-destaque {
+    position: relative;
+    width: 25vw;
+    height: 25vw;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.card-destaque .card-destaque-foto{
+    width: 100%;
+    height: 100%;
+}
+
+
+.card-destaque .card-destaque-foto .card-destaque-imgDestaque{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    image-rendering: optimizeQuality;
+    transition: transform 400ms linear;
+}
+
+.card-destaque .card-destaque-foto .card-destaque-imgDestaque:hover{
+    transform: scale(1.3);
+    transition: transform 6000ms linear;
+}
+
+.card-destaque-pontos{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(0, 0, 0,0.5);
+    z-index: 3;
+    bottom: -100px;
+    transition: all 200ms linear;
+    border-top: 1px crimson solid;;
+}
+
+.card-destaque-NomeDestino{
+    position: absolute;
+    z-index: 3;
+    top: 5px;
+    box-sizing: border-box;
+    border-left: 4px crimson solid;
+    border-bottom: 1px crimson solid;
+    padding-left: 5px;
+    text-align: left;
+    color: white;
+    font-size: 13px;
+    right: -300px;
+    width: 160px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, .5);
+    transition: all 200ms linear;
+}
+
+.card-destaque .card-destaque-pontos .card-destaque-pontos-flex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+
+.card-destaque .card-destaque-pontos .card-destaque-pontos-flex .card-destaque-bVerMais{
+    display: block;
+    padding: 7px 20px;
+    height: 30px;
+    width: 100px;
+    font-size: 13px;
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+    background-color: rgb(4, 100, 4);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.card-destaque .card-destaque-pontos .card-destaque-pontos-flex .card-destaque-bVerMais:hover{
+    background-color: rgb(3, 150, 3);
+}
+
+.card-destaque .card-destaque-pontos .card-destaque-pontos-flex .card-destaque-votos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    align-items: center;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.card-destaque .card-destaque-pontos .card-destaque-pontos-flex .card-destaque-votos .card-destaque-pontosText{
+    color: white;
+    margin-right: 5px;
+}
+
+.card-destaque .card-destaque-pontos .card-destaque-pontos-flex .card-destaque-votos .card-destaque-estrelas{
+    width: 100px;
+}
+
+.boxCadastrar{
+    margin-left: calc(50% - 300px);
+    width: 600px;
+}
+
+.boxCadastrar-Titulo{
+    width: 100%;
+    text-align: center;
+}
+
+.boxCadastrar-boxText{
+ 
+
+    width:100%;
+}
+
+.boxCadastrarBxText{
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height: 40px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    cursor: pointer;
+    border: 1px  rgb(177, 40, 40) solid;
+box-sizing: border-box;
+}
+
+
+.boxCadastrar-BEnviar{
+    box-sizing: border;
+    padding: 10px 20px;
+    display: block;
+    height: 100%;
+    font-size: 13px;
+    background-color: rgb(177, 40, 40) ;
+}
+
+.boxCadastrar-BEnviar:hover{
+    background-color: rgb(226, 64, 64) ;
+}
+
+.boxCadastrar-BEnviarText{
+    color: white;
+    text-align: center;
+}
+
+.boxCadastrar-text{
+    width:100%;
+    border:none;
+    outline: none;
+}
+.boxCadastrar{
+    margin-top: 60px;
+}
+
+.bgPage{
+    width: 100%;
+    height: 25px;
+    padding: 20px 25px;
+    box-sizing: border-box;
+    position: fixed;
+    top:0px;
+    left:0px;
+    z-index: 120000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px rgb(119, 0, 0) solid;
+}
+
+.imgBg{
+    position: absolute;
+    z-index: 0;
+    left:0px;
+    top:0px;
+    width: 100%;
+    height: 100%;
+}
+
+.DivTitle{
+    margin-left: 50px;
+    margin-top: 100px;
+    width: 600px;
+    position: absolute;
+    z-index: 30000;
+}
+
+.imgTitle{
+    z-index: 6;
+    width: 250px;
+}
+
+.boxIcon{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 8px;
+   
+}
+
+.divDesataques{
+    position: relative;
+    margin-left:10%;
+    margin-top: 110vh;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+
+
+
+.divDesataques div span{
+    display: block;
+    border-left: 4px  rgb(119, 0, 0) solid;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    font-weight: bolder;
+    box-sizing: border-box;
+}
+
+
+.box-flex-destaque{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.card-destaque{
+    position: relative;
+    width: 25%;
+    cursor: pointer;
+    overflow: hidden; 
+    z-index: 20000;   
+}
+
+.NomeDestino{
+    padding: 4px 0px;
+    position: absolute;
+    display: block;
+    margin-top: 10px;
+    width: 200px;
+    left: 500px;
+    background-color: rgba(255,255,255,.8);
+    border-left:4px rgb(177, 40, 40) solid;
+    padding-left: 5px;
+    z-index: 10000;
+    transition: all 400ms linear;
+}
+
+
+.box-imgDestaque{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.dados{
+    position: absolute;
+    padding: 4px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: calc(26% - 8px);
+    box-sizing: border-box;
+    top:calc(20% + 100px);
+    z-index: 4000;
+    height: 50px;
+    
+
+    align-items: center;
+
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pontos{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.pontosText{
+    display: block;
+    margin-left: 15px;
+    font-size: 14px;
+    color: white;
+}
+
+.estrelas{
+    width: 100px;
+}
+
+
+
+.card-destaque .dados .bVerMais{
+    padding: 5px 20px;
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(13, 126, 13);
+    font-size: 12px;
+}
+
+
+.card-destaque .dados .bVerMais:hover{
+    background-color: rgb(10, 187, 10);
+ 
+}
+
+.card-destaque .imgDestaque{
+    width: 100%;
+    height: 100%;
+    transition:  all 400ms  linear;
+}
+
+
+.card-destaque .imgDestaque:hover{
+    transform: scale(1.3);
+    transition:  all 6000ms  linear;
+}
+
+.textDestaque{
+    border-bottom: 1px rgba(255, 255, 255,0.5) solid;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: white;
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 13px;
+    text-align: center;
+    width: 100%;
+}
+
+.titleIcon{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.dadosAtivo:hover{
+    width: calc(26% - 8px);
+    transition: all 400ms linear;
+}
+
+.NomeDestinoAtivo:hover{
+    left: 133px;
+    transition: all 400ms linear;
+}
+
+.titulo{
+    color:rgb(255, 255, 255);
+    position: absolute;
+    top: 100px;
+    left:30px;
+    font-size: 100px;
+}
+
+
+
+.t-Box{
+    font-weight: bolder;
+    color:white;
+}
+
+.textBuscar{
+    display: inline-block;
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+  
+}
+
+input::selection{
+    background-color: rgb(177, 40, 40);
+    color:white;
+}
+
+.box-1{
+    display: flex;
+    height: 30px;
+    width: calc(100%-250px);
+}
+
+.fone{
+    color: white;
+}
+
+.bMenu{
+    cursor: pointer;
+    display: none;
+    width: 35px;
+    height: 35px;
+}
+
+.box-t{
+    position: absolute;
+    top: 350px;
+    bottom: 130px;
+    left: 0px;
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.flex-buscar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+    margin-left: 20%;
+    height: 100%;
+    border-radius: 6px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.box-text--{
+    padding-top: 6px;
+    padding-left: 6px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: white;
+    box-sizing: border-box;
+}
+
+.bBuscar{
+    box-sizing: border-box;
+    padding: 5px 10px;
+    display: block;
+    color: white;
+    box-sizing: border-box;
+}
+
+
+.boxBBuscar{
+    box-sizing: border-box;
+    height: 100%;
+    background-color:  rgb(119, 0, 0);
+    cursor: pointer;
+}
+
+
+.boxBBuscar:hover{
+    background-color:  rgb(177, 40, 40);
+}
+
+.linha{
+    width: 80vw;
+    margin-left:10vw;
+    margin-top: 15px;
+    border: 1px rgb(99, 102, 119) solid;
+    z-index: 5;
+}
+
+
+.txt{
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    text-shadow: 1px 1px black;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.icoModalidade{
+    display: block;
+    width: 50px;
+}
+
+.icoPacote{
+    display: block;
+    width: 180px;
+}
+
+.bTopBarPos{
+    padding:10px;
+    display: table-cell;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bTopBar{
+    display: inline;
+    color: white;
+    font-size: 13px;
+    margin-left: 10px;
+    padding:5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.bTopBarI{
+    display: inline;
+    color: white;
+    font-size: 13px;
+    margin-left: 10px;
+    padding:5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.bTopBar:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+
+}
+
+.rodaPé{
+    color: white;
+    font-size: 13px;
+    display: block;
+}
+
+.E{
+    font-weight: bolder;
+}
+
+.EC{
+    display: block;
+    padding: 50px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: white;
+    background-color: rgb(119, 0, 0);
+}
+
+
+
+
+
+.boxIco{
+    position: relative;
+    z-index: 5;
+    pointer-events: none;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.boxIco-{
+    padding:5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 5;
+    width: 100px;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 30px;
+   
+}
+
+.boxIco-:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.boxIcoAtivo{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+h1, h2, h3, h4, h5, h6{
+ pointer-events: none;
+}
+
+::selection{
+    background-color: none;
+    color: none;
+}
+
+.pageCards{
+    width: 100%;
+    background-color: rgb(81, 89, 104);
+   margin-top: 20px;
+}
+
+.tituloEscolhaAventura{
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.menuLateral{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    top: 0px;
+    right: -330px;
+    width: 330px;
+    height: 100%;
+    z-index: 120001;
+    background-color: rgb(119, 0, 0);
+    box-sizing: border-box;
+}
+
+.menuLateral .menuLateral-boxBts{
+    display: flex;
+    flex-direction: column;
+    margin-top: -150px;
+    width: 100%;
+}
+
+.menuLateral .menuLateral-boxBts .btMenuLateral{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 300ms linear;
+}
+
+.menuLateral .menuLateral-boxBts .btMenuLateral:hover{
+ background-color: rgb(255, 255, 255,0.3);
+ transition: background-color 300ms linear;
+}
+
+.bFecharMenuLateral{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 18px;
+    padding: 10px;
+    color: white;
+    box-sizing: border-box;
+    transition: transform 200ms linear;
+    cursor: pointer;
+}
+
+.bFecharMenuLateral:hover{
+    transform: scale(1.3);
+    transition: transform 200ms linear;
+}
+
+.logoMenuLateral{
+    margin-top: 20px;
+    margin-left: calc(50% - 125px);
+    z-index: 6;
+    width: 250px;
+}
+
+.foneMenuLateral{
+    display: inline-block;
+width: 100%;
+text-align: center;
+color: white;
+}
+
+
+.boxIcoFlexPacote{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.boxBts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: coral;
+}
+
+.bPacote{
+    width: 200px;
+    padding: 10px;
+    background-color: coral;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.bPacote:hover{
+    background-color: rgb(250, 167, 137);
+}
+
+
+.boxIcoFlex-{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80VW;
+    margin-left: 10vw;
+}
+
+.boxIcoFlex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80VW;
+    margin-left: 10vw;
+}
+
+.bg-Map{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.txt-Pacote{
+    pointer-events: none;
+    display: block;
+    color:black;
+    width: 250px;
+}
+
+.txtPacote{
+    margin-top: 150px;
+    display: block;
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.txtIcoPacote{
+    position: absolute;
+    top: 45px;
+    left: 30px;
+    color: white;
+    display: block;
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: center;    
+}
+
+.txtIco{
+margin-top: 5px;
+display: block;
+font-size: 12px;
+font-weight: bolder;
+
+}
+
+.pacote{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.tituloPacote{
+    padding-left: 8px;
+    display: block;
+    font-weight: bolder;
+    color:rgb(35, 135, 216);
+    border-left: 3px solid rgb(35, 135, 216);
+    border-bottom: 1px solid rgb(35, 135, 216);
+}
+
+.cardsPacotes{
+    margin-top: 15px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin-left: 10vw;
+    justify-content: space-around;
+    overflow: hidden;
+    transition: all 200ms linear;
+}
+
+.bMais{
+    position: absolute;
+    width: 28px;
+    color:white;
+    right: 5px;
+    bottom: 4px;
+    z-index: 3;
+}
+
+
+
+.verMais{
+    position: absolute;
+    width: 100px;
+    background-color: rgba(218, 214, 214, .4);
+    border: 1px white solid;
+    border-radius: 25px;
+    padding: 3px 0px;
+    text-align: center;
+    bottom: 6px;
+    left:5px;
+    cursor: pointer;
+    color: white;
+    font-size: 13px;
+}
+
+.verMais:hover{
+    background-color: rgb(218, 214, 214);
+    color: black;
+    cursor: pointer;
+}
+
+.imgFoto{
+    display: block;
+    width: 200px;
+}
+
+.cardTitulo{
+    /* border-left: 3px white solid; */
+    /* border-bottom: 1px white solid; */
+    color: white;
+    width: 60%;
+    display:block;
+    padding: 3px 0px;
+    padding-left: 5px;
+    position: absolute;
+    left:10px;
+    bottom: 40px;
+    font-size: 13px;
+}
+
+.cardText {
+    padding:8px;
+    font-size: 15px;
+    display: block;
+    background-color: white;
+}
+
+.fam:hover{
+    background-color: #ffc700;
+}
+
+.desb:hover{
+    background-color: #1b86e9;
+}
+
+.nat:hover{
+    background-color: #1cb42a;
+}
+
+
+.boxPacote{
+    display: block;
+    width: calc(60% - 50px);
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+.boxPacote-AlinhamentoEsquerdo{
+    display: block;
+    width: calc(60% - 50px);
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+.textoPacote{
+    display: block;
+    margin-top: 10px;
+    
+}
+
+.imgPacote{
+    width: 40%;
+
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin-top: 60px;
+    box-sizing: border-box;
+    outline: 1px white solid;
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition: all 200ms linear;
+}
+
+.cAtivo{
+    /* display: block; */
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition: all 200ms linear;
+}
+
+.ativo{
+    display: none;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 6px;
+    box-sizing: border;
+    padding: 10px 20px;
+    height: 100%;
+    font-size: 13px;
+    background-color: rgb(177, 40, 40) ;
+    color: white;
+}
+
+.footer{
+    padding-bottom: 0px;
+    background-color: rgb(119, 0, 0);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footerCopyRight{
+    display: block;
+    color: rgb(168, 168, 168);
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .footer-Flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    box-sizing: border-box;
+  }
+  
+  .footer-bandCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+    box-sizing: border-box;
+  }
+  
+  .footer-bandCards img{
+    margin-top: 6px;
+    margin-left: 6px;
+  }
+  
+  .footer-titulo{
+    display: block;
+    color: rgb(168, 168, 168);
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    margin-top: 15px;
+  }
+  
+  
+  .footer-titulo-{
+    padding-top: 10px;
+    display: block;
+    color: rgb(168, 168, 168);
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  
+  .footer-info{
+    cursor: pointer;
+    display: block;
+    color: rgb(168, 168, 168);
+    font-size: 12px;
+  }
+  
+  .footer-info:hover{
+    color: rgb(209, 209, 209);
+  }
+
+
+@media (max-width: 800px){
+    .card-destaque{
+        width: 48.75vw;
+        height: 48.75vw;
+        box-sizing: border-box;
+    }
+
+    
+}
+
+@media (max-width: 700px){
+
+    .card-destaque{
+        width: 48.5vw;
+        height: 48.5vw;
+        box-sizing: border-box;
+    }
+
+    .bTopBarPos, .fone{
+        display: none;
+    }
+
+    .bMenu{
+        display: inline-block;
+    }
+
+
+}
+
+@media (max-width: 650px){
+    .boxCadastrar-Titulo{
+        font-size: 13px;
+    }
+    .boxCadastrar{
+        width: 80%;
+        margin-left: 10%;
+    } 
+}
+
+
+@media (max-width: 600px){
+    .boxCadastrar-Titulo{
+        font-size: 13px;
+    }
+    .boxCadastrar{
+        width: 80%;
+        margin-left: 10%;
+    } 
+
+    .flex-buscar{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .txt{
+        font-size: 16px;
+    }
+
+    .card-destaque{
+        width: 48.2vw;
+        height: 48.2vw;
+        box-sizing: border-box;
+    }
+
+}
+
+@media (max-width: 475px){
+    .boxIco{
+        margin-right: 10%;
+    }
+    
+    .card-destaque{
+        width: 47.8vw;
+        height: 47.8vw;
+        box-sizing: border-box;
+    }
+}
+
+
+@media (max-width: 460px){
+    .boxIco{
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 450px){
+    .ativo{
+        display: block;
+    }
+    .boxCadastrar-BEnviar{
+        display: none;
+    } 
+}
+
+
+@media (max-width: 400px){
+    .card-destaque{
+        width: 100vw;
+        height: 100vw;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 380px){
+    .boxIco{
+        margin-right: 20%;
+    }
+}
